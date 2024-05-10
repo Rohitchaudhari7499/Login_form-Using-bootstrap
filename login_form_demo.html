@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+    <head>
+        <meta name="author" content="Rohit Chaudhari">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../Bootstrap_Lib/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css"rel="stylesheet" >
+        <title>Login Form</title>
+    </head>
+    <body>
+        <div class="container my-3 text-bg-light p-3 rounded-3"  style="width: 500px;">
+            <h1 class="align-center text-center">Login</h1>
+            <form onsubmit="alert('form submitted')">
+                <div class="mb-3 input-group">
+                    <label class="form-label" for="uid">Username</label>
+                    <div class="input-group">
+                    <span class="input-group-text" id="userid"></span>
+                    <input class="form-control" id="uid" placeholder="Enter Username" aria-describedby="userid" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="pwd">password</label>
+                    <input class="form-control" id="pwd" type="password" placeholder="Enter password" required>
+                    <p class="form-text text-bg-light" id="ptxt">Pssward must  be 0 to 10 character long .
+                     it should include at least one lowercase and uppercase  alphabet and 
+                     also digit it must not include  space</p>
+                </div>
+                <div class="mb-3">
+                   <label class="form-label" for="add"> address</label> 
+                   <input class="form-control" placeholder="Enter Your address">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="qid">Select Your Qualification</label>
+                    <select class="form-select" id="qid">
+                    <option class="form-select">--Qualification--</option>
+                    <option value="BE">B.E</option>
+                    <option value="ME">M.E</option>
+                    <option value="HSC">H.SC</option>
+                    <option value="MSC">M.SC</option>
+                    <option value="BCA">B.C.A</option>
+                    <option value="MCA">M.C.A</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-control">  Select Your Hobbies</label>
+                    <div class="form-check">
+                        <input id="hb1" class="form-check-input" type="checkbox" value="dance" name="Hobbies">
+                        <label for="hb1" class="form-check-label">Dancing</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input id="hb2" class="form-check-input" type="checkbox" value="dance" name="Hobbies">
+                        <label for="hb2" class="form-check-label">Singing</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input id="hb3" class="form-check-input" type="checkbox" value="dance" name="Hobbies">
+                        <label for="hb3" class="form-check-label">Travelling</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Select Gender</label>
+                    <div class="form-check">
+                        <input id="g1" class="form-check-input" type="radio" value="male" name="gender">
+                        <label for="g1" class="form-label">Male</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input id="g2" class="form-check-input" type="radio" value="male" name="gender">
+                        <label for="g2" class="form-label">Female</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label id="ageid" class="form-label">Select your Age</label>
+                    <input form="ageid" class="form-range" type="range" min="18" max="60">
+                    <div id="atxt" class="form-text text-dark">Age must be between 18 to 60 years</div>
+                </div>
+                <div>
+                    <label id="eid" class="form-label">Email Id</label>
+                    <div class="input-group">
+                       <input id="eid" class="form-control" type="email" aria-describedby="etxtid" placeholder="abc.xyz">
+                       <span id="etxtid" class="input-group-text">@examole.com</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label id="eid" class="form-label">Amount</label>
+                    <div class="input-group">
+                        <span id="amtxtid" class="input-group-text">&#8377;</span>
+                       <input id="amtid" class="form-control" type="number" aria-describedby="amtxtid" placeholder="000000.00" aria-label="Amount (to the nearest indian rupee)" min="0">
+                       
+                    </div>
+                </div>
+                <div class="mb-3 form-floating">
+                    <input class="form-control" id="ctid" type="text" placeholder="Enter City">
+                    <label class="text-light" for="ctid"> Enter City</label>
+                </div>
+                <div class="mb-3 form-floating">
+                    <input class="form-control" id="stid" type="text" placeholder="Enter State">
+                    <label class="text-light" for="stid"> State</label>
+                </div>
+                <div class="mb-3 row">
+                <div class=" col">
+                    <div class="form-floating">
+                    <input id="fid" class="form-control" placeholder="First Name">
+                    <label class="text-light" for="fid">First Name</label>
+                </div>
+            </div>
+                <div class="col">
+                    <div class="form-floating">
+                    <input id="mid" class="form-control" placeholder="Middle Name">
+                    <label class="text-light" for="mid">Middle Name</label>
+                </div>
+            </div>
+                <div class="col">
+                    <div  id="surid" class="form-floating">
+                    <input id="surid" class="form-control" placeholder="Last Name">
+                    <label class="text-light" for="surid">Last Name</label>
+                </div>
+            </div>
+        </div>
+               <div class="mb-3 row">
+                <div class="col">
+                    <div class="form-floating">
+                    <input id="pinid" class="form-control" placeholder="PINCODE">
+                    <label class="text-light" for="pinid">PINCODE</label>
+                </div>
+            </div>
+                <div class="col">
+                    <div class="form-floating">
+                    <input id="cid" class="form-control" placeholder="country">
+                    <label class="text-light" for="cid">Country</label>
+                </div>
+                </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button class="btn btn-success" type="reset">Reset</button>
+                </div>
+                
+            </form>
+        </div>
+    </body>
+</html>
